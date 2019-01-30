@@ -5,7 +5,6 @@ import {View, Text, StyleSheet} from 'react-native';
 /**
  * This is functional compent will display text from list
  */
-
 const listItem = (props) => (
 
     <View style={styles.listItem}>

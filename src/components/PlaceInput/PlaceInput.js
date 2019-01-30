@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import { View, TextInput, Button, StyleSheet } from "react-native";
 
+
+/**
+ * This is class based compent will use two way binding in order send back the places.
+ */
+
 class PlaceInput extends Component {
   state = {
     placeName: ""
