@@ -1,25 +1,21 @@
-import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import React from "react";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-
-/**
- * This is functional compent will display text from list
- */
-const listItem = (props) => (
-
+const listItem = props => (
+  <TouchableOpacity onPress={props.onItemPressed}>
     <View style={styles.listItem}>
-        <Text>{props.placeName}</Text>
+      <Text>{props.placeName}</Text>
     </View>
-
+  </TouchableOpacity>
 );
 
 const styles = StyleSheet.create({
-    listItem: {
-        width: "100%",
-        padding: 10,
-        backgroundColor: "#eee",
-        marginBottom: 5
-    }
+  listItem: {
+    width: "100%",
+    marginBottom: 5,
+    padding: 10,
+    backgroundColor: "#eee"
+  }
 });
 
 export default listItem;
